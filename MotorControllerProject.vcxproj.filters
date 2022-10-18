@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Misc Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>xml;json;txt;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="DataLayer">
+      <UniqueIdentifier>{8dd7bba8-c1a6-4493-a9be-945b5872c66f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessLayer">
+      <UniqueIdentifier>{2684dba3-2c42-4003-8134-44ae0559a9bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataLayer\Header Files">
+      <UniqueIdentifier>{2b9720bc-9e9e-4a6c-9b18-1573bf7a5bb7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataLayer\Source Files">
+      <UniqueIdentifier>{ba16d8c0-20fd-4eb6-8aaa-ee1e90c6c352}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessLayer\Header Files">
+      <UniqueIdentifier>{a2d65cb9-37b1-4421-b2a8-f1f9bdb984d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="BusinessLayer\Source Files">
+      <UniqueIdentifier>{27a582ae-ee9b-4a2d-954f-1abf2c936792}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DTOs">
+      <UniqueIdentifier>{9501be10-4c99-4046-acf2-35755ee7b82c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MotorControllerProject.ino" />
+    <None Include="src\arduino folders read me.txt">
+      <Filter>Misc Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.MotorControllerProject.vsarduino.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Motor.h">
+      <Filter>DataLayer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorActivator.h">
+      <Filter>BusinessLayer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DTO_action.h">
+      <Filter>DTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="MotorControllerClass.h">
+      <Filter>BusinessLayer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DTO_config.h">
+      <Filter>DTOs</Filter>
+    </ClInclude>
+    <ClInclude Include="motorFactory.h">
+      <Filter>BusinessLayer\Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActionReciever.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Dc.cpp">
+      <Filter>DataLayer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorActivator.cpp">
+      <Filter>BusinessLayer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MotorControllerClass.cpp">
+      <Filter>BusinessLayer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="motorFactory.cpp">
+      <Filter>BusinessLayer\Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActionReciever.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
