@@ -83,5 +83,8 @@
     <ClCompile Include="ActionReciever.cpp">
       <Filter>DataLayer\Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ActionReciever_dummy.cpp">
+      <Filter>DataLayer\Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

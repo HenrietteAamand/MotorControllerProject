@@ -3,11 +3,13 @@
 // 
 
 #include "ActionReciever.h"
-ActionReciever::ActionReciever()
+
+#include "ActionReciever.h"
+ActionReciever_dummy::ActionReciever_dummy()
 {
 }
 
-ActionReciever::~ActionReciever()
+ActionReciever_dummy::~ActionReciever_dummy()
 {
 }
 
@@ -23,13 +25,11 @@ DTO_Action* ActionReciever::getAction()
 
 bool ActionReciever::hasRevievedAction()
 {
-    
-    if(Serial.available() > 0)
+    return true;
+    /*if (Serial.available() > 0)
     {
         return true;
     }
     else
-        return false;
+        return false;*/
 }
-
-

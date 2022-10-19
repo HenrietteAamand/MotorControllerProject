@@ -26,6 +26,17 @@ private:
 	
 };
 
+class ActionReciever_dummy : public IActionReciever {
+public:
+	ActionReciever_dummy();
+	~ActionReciever_dummy();
+	DTO_Action* getAction();
+	bool hasRevievedAction();
+private:
+	DTO_Action theDto;
+
+};
+
 
 
 #endif

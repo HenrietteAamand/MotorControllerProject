@@ -8,6 +8,7 @@
 //#include "Motor.h"
 //#include "MotorActivator.h"
 //#include "DTO_action.h"
+#include "ActionReciever_dummy.h"
 #include "MotorControllerClass.h"
 
 
