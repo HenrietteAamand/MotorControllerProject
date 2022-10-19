@@ -21,10 +21,13 @@ void MotorControllerClass::startFlow()
 {
 	while (true) {
 		if (ar.hasRevievedAction()) {
+			Serial.println("mcc in void startFlow() at line 24, ar.hasRecievedAction == true");
+			Serial.println("mcc in void startFlow() at line 24, ar.hasRecievedAction == true");
 			DTO_Action *tempActionDTO = ar.getAction();
 			activeMotors = ma.controllMotors(tempActionDTO);
 		}
 		else {
+			Serial.println("mcc in void startFlow() at line 29, ar.hasRecievedAction == false");
 		}
 		delay(10000);
 	}

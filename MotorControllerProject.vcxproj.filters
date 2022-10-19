@@ -64,7 +64,7 @@
       <Filter>BusinessLayer\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ActionReciever.h">
-      <Filter>Header Files</Filter>
+      <Filter>DataLayer\Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -81,7 +81,7 @@
       <Filter>BusinessLayer\Source Files</Filter>
     </ClCompile>
     <ClCompile Include="ActionReciever.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>DataLayer\Source Files</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

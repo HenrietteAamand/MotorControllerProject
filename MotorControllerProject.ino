@@ -38,6 +38,7 @@ void setup() {
 void loop() {	
 
 	// Test 3 - MotorControllerClass
+	Serial.println(".ino in void loop line 41");
 	mcc.startFlow();
 
 	//// Test 2 - MotorActivator

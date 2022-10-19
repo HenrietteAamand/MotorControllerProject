@@ -14,10 +14,10 @@ ActionReciever::~ActionReciever()
 DTO_Action* ActionReciever::getAction()
 {
     theDto.actions[0] = open;
-    theDto.actions[0] = open;
-    theDto.actions[0] = close;
-    theDto.actions[0] = close;
-    theDto.actions[0] = close;
+    theDto.actions[1] = open;
+    theDto.actions[2] = close;
+    theDto.actions[3] = close;
+    theDto.actions[4] = close;
     return &theDto;
 }
 
