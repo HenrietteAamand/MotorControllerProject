@@ -18,7 +18,7 @@ int* MotorActivator::controllMotors(DTO_Action *currentAction)
 
 ActionEnum MotorActivator::activateMotor(int motor_i, ActionEnum motorAction)
 {
-	(availableMotors + motor_i)->printPins();
+	//(availableMotors + motor_i)->printPins();
 	if (motorAction == na) {
 		return na;
 	}

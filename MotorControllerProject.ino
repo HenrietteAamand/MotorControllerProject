@@ -32,14 +32,14 @@ void setup() {
 	//myDTO.actions[2] = close;
 	//myDTO.actions[3] = close;
 	//myDTO.actions[4] = na;
-	Serial.println("START");
+	//Serial.println("START");
 }
 
 // the loop function runs over and over again until power down or reset
 void loop() {	
 
 	// Test 3 - MotorControllerClass
-	Serial.println(".ino in void loop line 41");
+	//Serial.println(".ino in void loop line 41");
 	mcc.startFlow();
 
 	//// Test 2 - MotorActivator

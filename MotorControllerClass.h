@@ -21,6 +21,6 @@ private:
     DTO_config configurations;
     motorFactory mf = motorFactory();
     MotorActivator ma = MotorActivator();
-    ActionReciever_dummy ar = ActionReciever_dummy();
-    //ActionReciever ar = ActionReciever();
+    //ActionReciever_dummy ar = ActionReciever_dummy();
+    ActionReciever ar = ActionReciever();
 };

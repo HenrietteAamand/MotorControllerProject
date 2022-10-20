@@ -22,20 +22,23 @@ public:
 	DTO_Action* getAction();
 	bool hasRevievedAction();
 private:
-	DTO_Action theDto;
-	
+	ActionEnum convertStringToEnum();
+	DTO_Action recievedActions;
+	String serialisedAction = "";
+	String motorActionAsString = "";
+	int motorID = 9;
 };
 
-class ActionReciever_dummy : public IActionReciever {
-public:
-	ActionReciever_dummy();
-	~ActionReciever_dummy();
-	DTO_Action* getAction();
-	bool hasRevievedAction();
-private:
-	DTO_Action theDto;
-
-};
+//class ActionReciever_dummy : public IActionReciever {
+//public:
+//	ActionReciever_dummy();
+//	~ActionReciever_dummy();
+//	DTO_Action* getAction();
+//	bool hasRevievedAction();
+//private:
+//	DTO_Action recievedActions;
+//
+//};
 
 
 
