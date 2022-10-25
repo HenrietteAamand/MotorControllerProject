@@ -12,6 +12,18 @@ dc::dc(int _motorID, int _pinOpen, int _pinClose)
 	pinMode(pinOpen, OUTPUT);
 	pinMode(pinClose, OUTPUT);
 }
+//dc::dc(int _motorID, int _pinOpen, int _pinClose, int _pwm)
+//{
+//	motorID = _motorID;
+//	pinOpen = _pinOpen;
+//	pinClose = _pinClose;
+//	pwm = _pwm;
+//	pinMode(pinOpen, OUTPUT);
+//	pinMode(pinClose, OUTPUT);
+//	pinMode(pwm, OUTPUT);
+//	pwm = 100;
+//	digitalWrite(11, pwm);
+//}
 
 void dc::open()
 {

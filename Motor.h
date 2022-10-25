@@ -20,6 +20,7 @@ class dc : public IMotor
 {
 public:
 	dc(int motorID, int pinOpen, int pinClose);
+	//dc(int motorID, int pinOpen, int pinClose, int pwm);
 	dc() {
 		motorID = 0;
 		pinOpen = 0;
@@ -47,7 +48,7 @@ public:
 	int id();
 	void printPins();
 private:
-	int motorID, pinOpen, pinClose;
+	int motorID, pinOpen, pinClose, pwm;
 
 };
 

@@ -19,6 +19,8 @@ void MotorControllerClass::setupProgram()
 
 void MotorControllerClass::startFlow()
 {
+	DTO_Action tempDTO = DTO_Action();
+	activeMotors = ma.controllMotors(&tempDTO);
 	while (true) {
 		if (ar.hasRevievedAction()) {
 			DTO_Action *tempActionDTO = ar.getAction();

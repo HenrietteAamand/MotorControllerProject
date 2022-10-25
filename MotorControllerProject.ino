@@ -21,9 +21,11 @@
 //MotorActivator ma;
 MotorControllerClass mcc;
 #include "ActionReciever.h"
+int pwm_pin = 11;
 void setup() {
 	Serial.begin(9600);
 	mcc.setupProgram();
+	pinMode(pwm_pin, OUTPUT);
 	//ma = MotorActivator();
 	//dc dcArray[5] = {dc23, dc45, dc67, dc89, dc1011}; // OBS!
 	//ma.setMotorArray(dcArray);
@@ -37,9 +39,20 @@ void setup() {
 
 // the loop function runs over and over again until power down or reset
 void loop() {	
-
+	////Fading the LED
+	//for (int n = 0; n < 10; n++) {
+	//	for (int i = 0; i < 255; i++) {
+	//		analogWrite(pwm_pin, i);
+	//		delay(5);
+	//	}
+	//	for (int i = 255; i > 0; i--) {
+	//		analogWrite(pwm_pin, i);
+	//		delay(5);
+	//	}
+	//}
 	// Test 3 - MotorControllerClass
 	//Serial.println(".ino in void loop line 41");
+	analogWrite(pwm_pin, 100);
 	mcc.startFlow();
 
 	//// Test 2 - MotorActivator
