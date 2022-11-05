@@ -1,7 +1,3 @@
-// 
-// 
-// 
-
 #include "ActionReciever.h"
 //ActionReciever_dummy::ActionReciever_dummy()
 //{

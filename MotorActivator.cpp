@@ -23,7 +23,7 @@ ActionEnum MotorActivator::activateMotor(int motor_i, ActionEnum motorAction)
 		return na;
 	}
 	if (motorAction == open) {
-		(availableMotors+motor_i)->open();
+		(availableMotors+motor_i)->open(); //på plads (availableMotors+motor_i) i hukommelsen
 		activeMotorsID[(availableMotors + motor_i)->id() - 1] = 1; //Sat til 1 = aktiv, sat til 0 = slukket
 		return open;
 	}
