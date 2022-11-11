@@ -6,14 +6,11 @@
 
 dc::dc(int _motorID, int _pinOpen, int _pinClose)
 {
-	motorID = _motorID;
+	motorIndex = _motorID;
 	pinOpen = _pinOpen;
 	pinClose = _pinClose;
 	pinMode(pinOpen, OUTPUT);
 	pinMode(pinClose, OUTPUT);
-	// PWM
-	pinMode(11, OUTPUT);
-	digitalWrite(11, 255);
 }
 
 
@@ -37,13 +34,13 @@ void dc::stop()
 
 int dc::id()
 {
-	return motorID;
+	return motorIndex;
 }
 
 void dc::printPins()
 {
 	Serial.print("Motor with ID: ");
-	Serial.print(motorID);
+	Serial.print(motorIndex);
 	Serial.print(" uses pin ");
 	Serial.print(pinOpen);
 	Serial.print(" as openPin and ");

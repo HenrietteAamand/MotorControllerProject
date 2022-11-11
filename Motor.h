@@ -19,17 +19,17 @@ public:
 class dc : public IMotor
 {
 public:
-	dc(int motorID, int pinOpen, int pinClose);
+	dc(int motorIndex, int pinOpen, int pinClose);
 	//dc(int motorID, int pinOpen, int pinClose, int pwm);
 	dc() {
-		motorID = 0;
+		motorIndex = 0;
 		pinOpen = 0;
 		pinClose = 0;
 	}
 	// Copy constructor
 	dc(const dc& t)
 	{
-		motorID = t.motorID;
+		motorIndex = t.motorIndex;
 		pinOpen = t.pinOpen;
 		pinClose = t.pinClose;
 	}
@@ -37,7 +37,7 @@ public:
 	//Assignment cunstructor
 	dc& operator=(const dc& t)
 	{
-		motorID = t.motorID;
+		motorIndex = t.motorIndex;
 		pinOpen = t.pinOpen;
 		pinClose = t.pinClose;
 		return *this;
@@ -48,7 +48,7 @@ public:
 	int id();
 	void printPins();
 private:
-	int motorID, pinOpen, pinClose, pwm;
+	int motorIndex, pinOpen, pinClose, pwm;
 
 };
 

@@ -60,7 +60,7 @@
     <ClInclude Include="DTO_config.h">
       <Filter>DTOs</Filter>
     </ClInclude>
-    <ClInclude Include="motorFactory.h">
+    <ClInclude Include="MotorFactory.h">
       <Filter>BusinessLayer\Header Files</Filter>
     </ClInclude>
     <ClInclude Include="ActionReciever.h">

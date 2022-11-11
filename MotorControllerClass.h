@@ -13,18 +13,14 @@ public:
     void setupProgram();
     void startFlow();
 private:
-    dc* createMotors();
-    void readConfigfile();
-    bool stopActiveMotors();
-    int* activeMotors;
-    float* positions;
+    bool positionLimitsExeeded_CorrectAction();
     DTO_Action *currentAction;
     DTO_config configurations;
-    motorFactory mf = motorFactory();
-    //IMotorActivator *ma = new MotorActivator();
-    MotorActivator ma = MotorActivator();
-    PositionMonitor pm = PositionMonitor();
-    ActionReciever ar = ActionReciever();
+    MotorFactory motorFactory = MotorFactory();
+    MotorActivator motorActivator = MotorActivator();
+    //IMotorActivator* motorActivator = &MotorActivator();
+    PositionMonitor postitionMonitor = PositionMonitor();
+    ActionReciever actionReciever = ActionReciever();
     float posUpLim, posLowLim;
     //ActionReciever_dummy ar = ActionReciever_dummy();
 };

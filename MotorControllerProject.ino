@@ -15,13 +15,13 @@
 //MotorActivator ma;
 
 MotorControllerClass mcc;
-PositionMonitor pm;
 void setup() {
 	Serial.begin(9600);
-	mcc.setupProgram();
+	mcc.setupProgram();	
+	
 	//// Test 1 Setup
 	//ma = MotorActivator();
-	//dc dcArray[5] = {dc23, dc45, dc67, dc89, dc1011}; // OBS!
+	//dc dcArray[5] = {dc23, dc45, dc67, dc89, dc1011}; 
 	//ma.setMotorArray(dcArray);
 	//myDTO.actions[0] = close;
 	//myDTO.actions[1] = close;

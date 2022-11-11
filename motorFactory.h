@@ -1,11 +1,11 @@
 #pragma once
 #include "Motor.h"
-class motorFactory
+class MotorFactory
 {
 public:
-	dc* createMotor(char motorType[20]);
+	dc* createMotor(String type);
 private:
-	dc motor1, motor2, motor3, motor4, motor5;
+	void createDC();
 	dc dcArray[5];
 };
 

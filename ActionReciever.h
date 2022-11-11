@@ -22,11 +22,9 @@ public:
 	DTO_Action* getAction();
 	bool hasRevievedAction();
 private:
-	ActionEnum convertStringToEnum();
+	ActionEnum convertStringToEnum(String *actionAsString);
 	DTO_Action recievedActions;
-	String serialisedAction = "";
-	String motorActionAsString = "";
-	int motorID = 9;
+	void printAction();
 };
 
 //class ActionReciever_dummy : public IActionReciever {
