@@ -1,7 +1,3 @@
-// 
-// 
-// 
-
 #include "Motor.h"
 
 dc::dc(int _motorID, int _pinOpen, int _pinClose)

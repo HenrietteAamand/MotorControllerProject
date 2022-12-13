@@ -21,6 +21,7 @@ class PositionMonitor: public IPositionMonitor {
 public: 
 	PositionMonitor();
 	float getPosition(int monitorID);
+	void printString(String inputString);
 private:
 	int posIDArray[5] = {A1, A2, A3, A4, A5 };
 };

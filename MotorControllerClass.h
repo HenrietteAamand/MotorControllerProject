@@ -18,7 +18,6 @@ private:
     DTO_config configurations;
     MotorFactory motorFactory = MotorFactory();
     MotorActivator motorActivator = MotorActivator();
-    //IMotorActivator* motorActivator = &MotorActivator();
     PositionMonitor postitionMonitor = PositionMonitor();
     ActionReciever actionReciever = ActionReciever();
     float posUpLim, posLowLim;

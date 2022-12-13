@@ -10,7 +10,7 @@ ActionReciever::~ActionReciever(){}
 DTO_Action* ActionReciever::getAction()
 {
     // sytax af det serialiserede objekt "1:o,2:c,3:n,4:o,5:o>": 
-    String serialisedAction = Serial.readStringUntil('>');
+    String serialisedAction = Serial.readStringUntil('>') + ',';
     String motorActionAsString = "";
     int motorIndex = 0;
     for(char letter : serialisedAction) {

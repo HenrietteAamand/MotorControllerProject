@@ -16,8 +16,15 @@ float PositionMonitor::getPosition(int id)
 	if (id < 5){
 		int positionInBits = analogRead(posIDArray[id]);
 		positionInVolt = ((5.0 / 1023.0) * positionInBits);
-		//Serial.println(positionInVolt);
+		//if (id < 2) {
+		//	Serial.print(String(id+1));
+		//	Serial.println(": " + String(positionInVolt) + "V");
+		//}
 	}
-	//return positionInVolt;
-	return 3.0;
+	return positionInVolt;
+}
+
+void PositionMonitor::printString(String inputString)
+{
+	Serial.println(inputString);
 }

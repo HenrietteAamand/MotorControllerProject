@@ -16,7 +16,7 @@
 
 MotorControllerClass mcc;
 void setup() {
-	Serial.begin(9600);
+	Serial.begin(115200);
 	mcc.setupProgram();	
 	
 	//// Test 1 Setup

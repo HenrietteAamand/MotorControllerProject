@@ -5,5 +5,5 @@ enum ActionEnum
 };
 
 struct DTO_Action {
-	ActionEnum actions[5] = {open, open, open, open, open}; 
+	ActionEnum actions[5] = {stop, stop, stop, stop, stop}; 
 };

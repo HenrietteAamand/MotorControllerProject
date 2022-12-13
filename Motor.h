@@ -1,5 +1,3 @@
-// Motor.h
-
 #ifndef _MOTOR_h
 #define _MOTOR_h
 
@@ -20,7 +18,6 @@ class dc : public IMotor
 {
 public:
 	dc(int motorIndex, int pinOpen, int pinClose);
-	//dc(int motorID, int pinOpen, int pinClose, int pwm);
 	dc() {
 		motorIndex = 0;
 		pinOpen = 0;
